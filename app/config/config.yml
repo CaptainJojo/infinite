@@ -32,11 +32,6 @@ framework:
     assets: ~
     php_errors:
         log: true
-    assets:
-        packages:
-            js:
-                base_urls: 'http://infinite.dev/scripts/js'
-                version_strategy: 'app.assets.js.version_strategy'
 
 # Twig Configuration
 twig:

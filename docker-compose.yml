@@ -26,8 +26,3 @@ services:
             - php
         volumes:
             - ${LOGS_DIR}/nginx/:/var/log/nginx
-    node:
-        build: docker/node
-        volumes:
-            - ${SYMFONY_APP_PATH}:/var/www/symfony
-        command: bash -c "yarn install && yarn watch"

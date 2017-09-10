@@ -1,17 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div id="react-latest-news-home" >
-
-    <div>
+COUCOU
 {% endblock %}
 
 {% block javascripts %}
-{% set initial_state = {latestNews: {}} %}
-<script>window.__INITIAL_STATE__ = {{ initial_state|json_encode|raw }};</script>
-<script src="{{ asset('inlined.js', 'js') }}" defer></script>
-<script src="{{ asset('vendor.js', 'js') }}" defer></script>
-<script src="{{ asset('home.js', 'js') }}" defer></script>
+
 {% endblock  %}
 
 {% block stylesheets %}
