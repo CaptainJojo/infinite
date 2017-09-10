@@ -1,0 +1,10 @@
+---
+    extends: "airbnb"
+    env:
+        node: true
+        browser: true
+        jest: true
+    settings:
+        import/resolver:
+            webpack:
+                config: 'app/config/webpack.config.js'

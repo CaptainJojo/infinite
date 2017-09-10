@@ -1,0 +1,8 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: '%env(POSTGRES_HOST)%'
+    database_port: '%env(POSTGRES_PORT)%'
+    database_name: '%env(POSTGRES_DB)%'
+    database_user: '%env(POSTGRES_USER)%'
+    database_password: '%env(POSTGRES_PASSWORD)%'
+    secret: '%env(SECRET)%'

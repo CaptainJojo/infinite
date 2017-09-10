@@ -1,0 +1,29 @@
+exports[`LatestNews container hide the more button while fetching data 1`] = `
+<div>
+  <ul
+    className="cm-section-thread__section-list" />
+</div>
+`;
+
+exports[`LatestNews container render correctly 1`] = `
+<div>
+  <ul
+    className="cm-section-thread__section-list">
+    <li
+      className="cm-section-thread__article" />
+    <li
+      className="cm-section-thread__article" />
+    <li
+      className="cm-section-thread__article" />
+  </ul>
+  <div
+    className="ol-grid__cell ol-grid__cell--full@to-phone-l">
+    <a
+      aria-label="Afficher les contenus plus anciens"
+      className="ca-btn ca-btn--important"
+      onClick={[Function]}>
+      Voir Plus
+    </a>
+  </div>
+</div>
+`;

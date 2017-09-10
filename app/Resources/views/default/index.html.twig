@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="react-latest-news-home" >
+      <ul>
+        {% for article in latestNews %}
+        <li>
+          {{ article.title }}
+        </li>
+        {% endfor %}
+      <ul>
+    <div>
+{% endblock %}
+
+{% block javascripts %}
+{% set initial_state = {
+      latestNews: {
+          data: latestNews,
+          lastItemDate: lastItemDate,
+          limit: 3,
+      },
+  } %}
+<script>window.__INITIAL_STATE__ = {{ initial_state|json_encode|raw }};</script>
+<script src="{{ asset('inlined.js', 'js') }}" defer></script>
+<script src="{{ asset('vendor.js', 'js') }}" defer></script>
+<script src="{{ asset('home.js', 'js') }}" defer></script>
+{% endblock  %}
+
+{% block stylesheets %}
+{% endblock %}
